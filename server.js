@@ -36,7 +36,7 @@ app.get('/todos/:id', function(req, res){
     }
   });
   if(matchedToDo){
-    res.send(res.json(matchedToDo));
+    res.json(matchedToDo);
   }else{
     res.status(404).send();
   }
